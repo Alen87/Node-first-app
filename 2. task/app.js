@@ -29,7 +29,7 @@ const server = http.createServer((req, res)=>{
             console.log(parsedBody.split('=')[1]);   // username = whatever-the-user-entered
         });
         res.statusCode=302;
-        res.setHeader('Location','/');
+        res.setHeader('Location',  '/');
         res.end();
     }
 
